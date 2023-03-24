@@ -1,0 +1,6 @@
+
+
+# Docker run command executed for (6)
+
+
+docker run  -id  -p 9393:9300 -v /root/csvserver/solution:/csvserver/abc -e "CSVSERVER_BORDER=Orange" infracloudio/csvserver:latest /bin/bash -c "cp /csvserver/abc/inputFile /csvserver;mv /csvserver/inputFile /csvserver/inputdata; /csvserver/csvserver;"
